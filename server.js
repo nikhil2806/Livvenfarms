@@ -9,8 +9,8 @@ app.use(express.json());
 // Create a MySQL connection
 const db = mysql.createConnection({
     host: 'localhost',
-    user: 'root' // Replace with your MySQL username
-    password: 'Nikhil@2806' // Replace with your MySQL password
+    user: 'root' ,// Replace with your MySQL username
+    password: 'Nikhil@2806' ,// Replace with your MySQL password
     database: 'farmhouse_calendar'
 });
 
