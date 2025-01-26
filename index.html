@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livven Farms</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FullCalendar CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/main.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Livven Farms Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#accommodation">Accommodation</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Livven Farms</h1>
+            <p>Experience the beauty of nature and the comfort of home.</p>
+            <a href="#accommodation" class="btn">Book Now</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Livven Farms is a serene getaway nestled in the heart of nature. Our farmstay offers a unique blend of rustic charm and modern amenities, providing the perfect escape from the hustle and bustle of city life.</p>
+    </section>
+
+    <section id="accommodation" class="accommodation">
+        <h2>Accommodation</h2>
+        <div class="rooms">
+            <div class="room">
+                <img src="room1.jpg" alt="Room 1">
+                <h3>Deluxe Room</h3>
+                <p>Spacious and comfortable, our deluxe rooms offer stunning views of the surrounding landscape.</p>
+            </div>
+            <div class="room">
+                <img src="room2.jpg" alt="Room 2">
+                <h3>Family Suite</h3>
+                <p>Perfect for families, our suites come with multiple bedrooms and a cozy living area.</p>
+            </div>
+        </div>
+        <div class="availability-calendar">
+            <h3>Check Availability</h3>
+            <div id="calendar"></div>
+        </div>
+    </section>
+
+    <section id="activities" class="activities">
+        <h2>Activities</h2>
+        <div class="activity-list">
+            <div class="activity">
+                <img src="hiking.jpg" alt="Hiking">
+                <h3>Hiking</h3>
+                <p>Explore the scenic trails around our farmhouse.</p>
+            </div>
+            <div class="activity">
+                <img src="fishing.jpg" alt="Fishing">
+                <h3>Fishing</h3>
+                <p>Relax by the lake and enjoy a day of fishing.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <img src="gallery1.jpg" alt="Gallery Image 1">
+            <img src="gallery2.jpg" alt="Gallery Image 2">
+            <img src="gallery3.jpg" alt="Gallery Image 3">
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What are the check-in and check-out times?</h3>
+                    <span class="icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Check-in time is 3:00 PM, and check-out time is 11:00 AM.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is parking available?</h3>
+                    <span class="icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we provide free parking for all our guests.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Are pets allowed?</h3>
+                    <span class="icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Unfortunately, pets are not allowed at Livven Farms.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you offer Wi-Fi?</h3>
+                    <span class="icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we provide complimentary Wi-Fi for all our guests.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I cancel my booking?</h3>
+                    <span class="icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, you can cancel your booking up to 48 hours before your check-in date for a full refund.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+           <p>Email: vamc.krishna648@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Livven Farms. All rights reserved.</p>
+    </footer>
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <script src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js'></script>
+        <script>
+    
+          document.addEventListener('DOMContentLoaded', function() {
+            const calendarEl = document.getElementById('calendar')
+            const calendar = new FullCalendar.Calendar(calendarEl, {
+              initialView: 'dayGridMonth'
+            })
+            calendar.render()
+          })
+    
+        </script>
+      </head>
+      <body>
+        <div id='calendar'></div>
+      </body>
+    </html>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmhouse Calendar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/main.min.css">
+</head>
+<body>
+    <h1>Farmhouse Availability Calendar</h1>
+    <div id="calendar"></div>
+
+    <h2>Add Event</h2>
+    <form id="eventForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+        <br>
+        <label for="start_date">Start Date:</label>
+        <input type="datetime-local" id="start_date" name="start_date" required>
+        <br>
+        <label for="end_date">End Date:</label>
+        <input type="datetime-local" id="end_date" name="end_date">
+        <br>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea>
+        <br>
+        <button type="submit">Add Event</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const calendarEl = document.getElementById('calendar');
+            const calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                events: '/events', // Fetch events from the backend
+                editable: true, // Allow dragging and resizing events
+                eventDrop: async (info) => {
+                    // Update event in the database when dragged
+                    await fetch(`/events/${info.event.id}`, {
+                        method: 'PUT',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            start_date: info.event.start.toISOString(),
+                            end_date: info.event.end ? info.event.end.toISOString() : null
+                        })
+                    });
+                }
+            });
+            calendar.render();
+
+            // Add event form submission
+            const eventForm = document.getElementById('eventForm');
+            eventForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const formData = new FormData(eventForm);
+                const event = {
+                    title: formData.get('title'),
+                    start_date: formData.get('start_date'),
+                    end_date: formData.get('end_date'),
+                    description: formData.get('description')
+                };
+                const response = await fetch('/events', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(event)
+                });
+                const newEvent = await response.json();
+                calendar.addEvent(newEvent);
+                eventForm.reset();
+            });
+        });
+    </script>
+</body>
+</html>
