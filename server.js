@@ -10,7 +10,7 @@ app.use(express.json());
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root' // Replace with your MySQL username
-    password: 'Nikhil@2806', // Replace with your MySQL password
+    password: 'Nikhil@2806' // Replace with your MySQL password
     database: 'farmhouse_calendar'
 });
 
